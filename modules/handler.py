@@ -8,6 +8,7 @@ class CommandErrorHandler:
         self.bot = bot
 
     async def on_command_error(self, ctx, error):
+        print(error)
         if hasattr(ctx.command, 'on_error'):
             return
         
